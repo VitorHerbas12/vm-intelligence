@@ -97,6 +97,7 @@ def main():
     config_values = config.batch_get(["B8", "B13", "B6"])
     meta_ninja_values = meta_ninja.batch_get(["C11", "C14", "C17"])
     intelligence_values = intelligence.batch_get(["C4", "D5", "D7", "D13"])
+    debt_values = dashboard.batch_get(["B48", "E48", "H48", "K48", "B50", "B51"])
 
     def cv(index, fallback=0):
         block = config_values[index]
@@ -112,6 +113,12 @@ def main():
 
     def iv(index, fallback="—"):
         block = intelligence_values[index]
+        if not block or not block[0]:
+            return fallback
+        return block[0][0]
+
+    def dv(index, fallback=""):
+        block = debt_values[index]
         if not block or not block[0]:
             return fallback
         return block[0][0]
@@ -158,6 +165,14 @@ def main():
             "estudo_realizado_h": number(v(23)),
             "estudo_progresso_pct": percent(v(24)),
             "foco_estudo": text(v(29), "Python"),
+        },
+        "dividas": {
+            "total_aberto_brl": number(dv(0)),
+            "parcela_mensal_brl": number(dv(1)),
+            "proximo_vencimento": text(dv(2), "—"),
+            "ativas": int(number(dv(3))),
+            "prioridade_quitacao": text(dv(4), "Nenhuma dívida cadastrada"),
+            "recomendacao": text(dv(5), "Cadastre suas dívidas para ativar as recomendações."),
         },
         "action_center": {
             "proxima_tarefa": {
