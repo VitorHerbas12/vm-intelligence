@@ -1,23 +1,23 @@
 {
-  "updated_at": "2026-11-05T21:29:57.445732+00:00",
+  "updated_at": "2026-11-05T23:39:00+00:00",
   "system_status": "operational",
   "financial": {
-    "saldo_brl": 0.0,
-    "receita_mes_brl": 0.0,
-    "despesas_mes_brl": 0.0,
+    "saldo_brl": 0,
+    "receita_mes_brl": 0,
+    "despesas_mes_brl": 0,
     "cambio_usd_brl": 5.5,
-    "taxa_freelance_usd_h": 12.0,
-    "capacidade_livre_h_mes": 40.0,
-    "reserva_alvo_brl": 25000.0
+    "taxa_freelance_usd_h": 12,
+    "capacidade_livre_h_mes": 40,
+    "reserva_alvo_brl": 25000
   },
   "ninja": {
-    "acumulado_brl": 0.0,
-    "meta_total_brl": 40000.0,
-    "restante_brl": 40000.0,
-    "progresso_pct": 0.0,
-    "aporte_mensal_brl": 2857.14,
-    "horas_mes_necessarias": 45.8,
-    "margem_horas_mes": -5.8,
+    "acumulado_brl": 0,
+    "meta_total_brl": 47000,
+    "restante_brl": 47000,
+    "progresso_pct": 0,
+    "aporte_mensal_brl": 3357.14,
+    "horas_mes_necessarias": 53.9,
+    "margem_horas_mes": -13.9,
     "prazo": "2027-12-31"
   },
   "freelance": {
@@ -25,7 +25,7 @@
     "entrevistas": 0,
     "contratos": 0,
     "connects": 0,
-    "taxa_conversao_pct": 0.0,
+    "taxa_conversao_pct": 0,
     "status_cambio": "Estável",
     "status_meta": "Sobrecarga de Horas",
     "status_prospeccao": "Funil Ativo",
@@ -36,14 +36,14 @@
     "tarefas_em_andamento": 1,
     "tarefas_em_revisao": 0,
     "tarefas_concluidas": 0,
-    "estudo_meta_h_semana": 10.0,
-    "estudo_realizado_h": 4.0,
-    "estudo_progresso_pct": 40.0,
+    "estudo_meta_h_semana": 10,
+    "estudo_realizado_h": 4,
+    "estudo_progresso_pct": 40,
     "foco_estudo": "Python"
   },
   "dividas": {
-    "total_aberto_brl": 0.0,
-    "parcela_mensal_brl": 0.0,
+    "total_aberto_brl": 0,
+    "parcela_mensal_brl": 0,
     "proximo_vencimento": "—",
     "ativas": 0,
     "prioridade_quitacao": "Nenhuma dívida cadastrada",
@@ -63,8 +63,8 @@
       "detalhe": "Meta semanal: 10h • Registre horas na aba ESTUDOS"
     },
     "meta": {
-      "titulo": "Kawasaki Ninja 500",
-      "detalhe": "Progresso: 0,0% • Faltam R$ 40.000,00"
+      "titulo": "Kawasaki Ninja 500 SE",
+      "detalhe": "Progresso: 0,0% • Faltam R$ 47.000,00"
     },
     "prioridade": "● Central de ação atualizada com dados reais do sistema."
   }
