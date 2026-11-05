@@ -1,0 +1,8 @@
+# Arquivos internos que não devem ir para o deploy da Vercel
+.github
+scripts
+
+# Mantemos no deploy:
+# index.html
+# assets/
+# data/dashboard.json
