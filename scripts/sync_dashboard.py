@@ -188,7 +188,7 @@ def main():
                 "detalhe": text(v(30), "Registre horas de estudo na aba ESTUDOS."),
             },
             "meta": {
-                "titulo": text(v(31), "Kawasaki Ninja 500"),
+                "titulo": text(v(31), "Kawasaki Ninja 500 SE"),
                 "detalhe": text(v(32), "Meta financeira em acompanhamento."),
             },
             "prioridade": text(v(33), "Cadastre dados reais para ativar a inteligência do sistema."),
