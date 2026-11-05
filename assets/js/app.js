@@ -58,6 +58,7 @@ function renderDashboard(data) {
   const freelance = data.freelance || {};
   const productivity = data.produtividade || {};
   const actions = data.action_center || {};
+  const debts = data.dividas || {};
 
   setText('[data-metric="saldo"]', brl(financial.saldo_brl));
   setText('[data-metric="receita"]', brl(financial.receita_mes_brl));
@@ -121,7 +122,16 @@ function renderDashboard(data) {
     if (detail) detail.textContent = item.detalhe || '';
   });
 
-  setText('.priority-banner strong', actions.prioridade || 'Sistema atualizado.');
+  const priorityBanners = document.querySelectorAll('.priority-banner');
+  const mainPriority = priorityBanners[0]?.querySelector('strong');
+  if (mainPriority) mainPriority.textContent = actions.prioridade || 'Sistema atualizado.';
+
+  setText('[data-metric="dividasTotal"]', brl(debts.total_aberto_brl));
+  setText('[data-metric="dividasParcela"]', brl(debts.parcela_mensal_brl));
+  setText('[data-metric="dividasAtivas"]', String(Number(debts.ativas || 0)));
+  setText('[data-metric="dividasVencimento"]', debts.proximo_vencimento || '—');
+  setText('[data-metric="dividasPrioridade"]', debts.prioridade_quitacao || 'Nenhuma dívida cadastrada');
+  setText('[data-metric="dividasRecomendacao"]', debts.recomendacao || 'Cadastre suas dívidas para ativar as recomendações.');
 
   document.documentElement.dataset.dataStatus = 'loaded';
 }
