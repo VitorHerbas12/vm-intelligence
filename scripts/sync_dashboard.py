@@ -72,6 +72,7 @@ def main():
     dashboard = workbook.worksheet("DASHBOARD")
     config = workbook.worksheet("CONFIG")
     intelligence = workbook.worksheet("INTELIGÊNCIA")
+    meta_ninja = workbook.worksheet("META_NINJA")
 
     # Apenas células agregadas/calculadas. Nenhuma linha transacional é publicada.
     values = dashboard.batch_get([
@@ -93,11 +94,18 @@ def main():
             return fallback
         return block[0][0]
 
-    config_values = config.batch_get(["C9", "C14", "C7"])
+    config_values = config.batch_get(["B8", "B13", "B6"])
+    meta_ninja_values = meta_ninja.batch_get(["C11", "C14", "C17"])
     intelligence_values = intelligence.batch_get(["C4", "D5", "D7", "D13"])
 
     def cv(index, fallback=0):
         block = config_values[index]
+        if not block or not block[0]:
+            return fallback
+        return block[0][0]
+
+    def mv(index, fallback=0):
+        block = meta_ninja_values[index]
         if not block or not block[0]:
             return fallback
         return block[0][0]
@@ -125,9 +133,9 @@ def main():
             "meta_total_brl": number(v(6)),
             "restante_brl": number(v(7)),
             "progresso_pct": percent(v(8)),
-            "aporte_mensal_brl": number(v(9)),
-            "horas_mes_necessarias": number(v(11)),
-            "margem_horas_mes": number(v(12)),
+            "aporte_mensal_brl": number(mv(0)),
+            "horas_mes_necessarias": number(mv(1)),
+            "margem_horas_mes": number(mv(2)),
             "prazo": "2027-12-31",
         },
         "freelance": {
