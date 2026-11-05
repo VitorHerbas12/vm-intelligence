@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-11-05T14:35:45.033237+00:00",
+  "updated_at": "2026-11-05T14:46:54.957102+00:00",
   "system_status": "operational",
   "financial": {
     "saldo_brl": 0.0,
     "receita_mes_brl": 0.0,
     "despesas_mes_brl": 0.0,
-    "cambio_usd_brl": 5.44,
+    "cambio_usd_brl": 5.45,
     "taxa_freelance_usd_h": 12.0,
-    "capacidade_livre_h_mes": 0.0,
-    "reserva_alvo_brl": 0.0
+    "capacidade_livre_h_mes": 40.0,
+    "reserva_alvo_brl": 25000.0
   },
   "ninja": {
     "acumulado_brl": 0.0,
@@ -16,8 +16,8 @@
     "restante_brl": 40000.0,
     "progresso_pct": 0.0,
     "aporte_mensal_brl": 2857.14,
-    "horas_mes_necessarias": 0.0,
-    "margem_horas_mes": 0.0,
+    "horas_mes_necessarias": 46.3,
+    "margem_horas_mes": -6.3,
     "prazo": "2027-12-31"
   },
   "freelance": {
@@ -36,7 +36,7 @@
     "tarefas_em_andamento": 0,
     "tarefas_em_revisao": 0,
     "tarefas_concluidas": 0,
-    "estudo_meta_h_semana": 0.0,
+    "estudo_meta_h_semana": 10.0,
     "estudo_realizado_h": 0.0,
     "estudo_progresso_pct": 0.0,
     "foco_estudo": "Python"
