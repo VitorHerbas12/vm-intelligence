@@ -3,68 +3,280 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>VM Intelligence</title>
-  <meta name="description" content="Painel executivo de finanças, freelance, estudos, metas e inteligência." />
+  <title>VM Intelligence — Dashboard</title>
+  <meta name="description" content="Dashboard pessoal de finanças, freelance, estudos, metas e inteligência operacional." />
   <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body>
-  <main class="app-shell">
-    <header class="hero" id="inicio">
-      <p class="eyebrow">VM INTELLIGENCE</p>
-      <h1>Visão executiva da sua evolução.</h1>
-      <p class="subtitle">Finanças, freelance, estudos, metas e decisões em um único sistema.</p>
-    </header>
+  <div class="app">
+    <aside class="sidebar" aria-label="Navegação principal">
+      <a class="brand" href="#overview" aria-label="VM Intelligence">
+        <span class="brand-mark">VM</span>
+        <span class="brand-copy">
+          <strong>Intelligence</strong>
+          <small>Control Center</small>
+        </span>
+      </a>
 
-    <section class="section" id="financeiro">
-      <div class="section-heading">
-        <span>01</span><h2>Financeiro</h2>
+      <nav class="nav">
+        <a class="nav-link active" href="#overview"><span>01</span>Visão geral</a>
+        <a class="nav-link" href="#financeiro"><span>02</span>Financeiro</a>
+        <a class="nav-link" href="#freelance"><span>03</span>Freelance</a>
+        <a class="nav-link" href="#produtividade"><span>04</span>Produtividade</a>
+        <a class="nav-link" href="#metas"><span>05</span>Metas</a>
+        <a class="nav-link" href="#inteligencia"><span>06</span>Inteligência</a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="sync-dot"></div>
+        <div>
+          <strong>Base conectada</strong>
+          <small>Google Sheets + GitHub</small>
+        </div>
       </div>
-      <div class="grid kpi-grid">
-        <article class="card"><small>Saldo acumulado</small><strong>R$ 0,00</strong></article>
-        <article class="card"><small>Receita do mês</small><strong>R$ 0,00</strong></article>
-        <article class="card"><small>Despesas registradas</small><strong>R$ 0,00</strong></article>
-        <article class="card"><small>Câmbio USD/BRL</small><strong>—</strong></article>
-        <article class="card"><small>Taxa freelance</small><strong>US$ 12/h</strong></article>
-      </div>
-    </section>
+    </aside>
 
-    <section class="section" id="freelance">
-      <div class="section-heading"><span>02</span><h2>Freelance</h2></div>
-      <div class="grid two-col">
-        <article class="panel"><h3>Funil comercial</h3><p>Propostas, entrevistas, contratos e connects.</p></article>
-        <article class="panel"><h3>Modelos de cobrança</h3><p>Hourly vs. Fixed Price.</p></article>
-      </div>
-    </section>
+    <main class="content">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">VM FINANCIAL & FREELANCE INTELLIGENCE</p>
+          <h1>Seu centro de decisão.</h1>
+        </div>
+        <div class="topbar-actions">
+          <span class="status-pill"><span></span>Sistema operacional</span>
+          <button class="icon-btn" id="themeToggle" type="button" aria-label="Alternar tema">◐</button>
+        </div>
+      </header>
 
-    <section class="section" id="estudos">
-      <div class="section-heading"><span>03</span><h2>Estudos</h2></div>
-      <article class="panel"><h3>Produtividade & capacitação</h3><p>Tarefas, horas estudadas, habilidades e progresso semanal.</p></article>
-    </section>
+      <section class="hero-grid" id="overview">
+        <article class="hero-card hero-card-main">
+          <div class="hero-card-head">
+            <div>
+              <p class="card-kicker">STATUS GERAL</p>
+              <h2>Visão executiva</h2>
+            </div>
+            <span class="live-chip">AO VIVO</span>
+          </div>
 
-    <section class="section" id="metas">
-      <div class="section-heading"><span>04</span><h2>Metas</h2></div>
-      <article class="panel accent-panel">
-        <p class="eyebrow">OBJETIVO PRINCIPAL</p>
-        <h3>Kawasaki Ninja 500</h3>
-        <p>Acompanhamento de valor acumulado, saldo restante, aporte necessário e capacidade de execução.</p>
-        <div class="progress"><span style="width:0%"></span></div>
-      </article>
-    </section>
+          <div class="hero-metrics">
+            <div>
+              <small>Saldo acumulado</small>
+              <strong data-metric="saldo">R$ 0,00</strong>
+              <span class="metric-note positive">● Saldo positivo</span>
+            </div>
+            <div>
+              <small>Receita do mês</small>
+              <strong data-metric="receita">R$ 0,00</strong>
+              <span class="metric-note">Meta mensal: R$ 1.000</span>
+            </div>
+            <div>
+              <small>Despesas</small>
+              <strong data-metric="despesas">R$ 0,00</strong>
+              <span class="metric-note">Orçamento controlado</span>
+            </div>
+          </div>
+        </article>
 
-    <section class="section" id="inteligencia">
-      <div class="section-heading"><span>05</span><h2>Inteligência</h2></div>
-      <article class="panel"><h3>Central de decisões</h3><p>Diagnósticos e recomendações provenientes da planilha.</p></article>
-    </section>
-  </main>
+        <article class="hero-card compact-card">
+          <p class="card-kicker">CÂMBIO</p>
+          <div class="metric-stack">
+            <strong data-metric="cambio">R$ 5,44</strong>
+            <span>USD / BRL</span>
+          </div>
+          <div class="mini-status">
+            <span class="dot positive-dot"></span>
+            <span>Estável</span>
+          </div>
+        </article>
 
-  <nav class="dock" aria-label="Navegação principal">
-    <a href="#inicio" data-label="Início">⌂</a>
-    <a href="#financeiro" data-label="Financeiro">$</a>
-    <a href="#freelance" data-label="Freelance">↗</a>
-    <a href="#estudos" data-label="Estudos">◫</a>
-    <a href="#metas" data-label="Metas">◎</a>
-    <a href="#inteligencia" data-label="Inteligência">✦</a>
-  </nav>
+        <article class="hero-card compact-card">
+          <p class="card-kicker">TAXA FREELANCE</p>
+          <div class="metric-stack">
+            <strong data-metric="taxa">US$ 12</strong>
+            <span>por hora</span>
+          </div>
+          <div class="mini-status">
+            <span class="dot"></span>
+            <span>40h livres / mês</span>
+          </div>
+        </article>
+      </section>
+
+      <section class="dashboard-section" id="metas">
+        <div class="section-title">
+          <div>
+            <p class="eyebrow">OBJETIVO PRINCIPAL</p>
+            <h2>Kawasaki Ninja 500</h2>
+          </div>
+          <span class="deadline">Prazo: 31/12/2027</span>
+        </div>
+
+        <article class="goal-card">
+          <div class="goal-summary">
+            <div>
+              <small>Acumulado</small>
+              <strong data-metric="ninjaAcumulado">R$ 0,00</strong>
+            </div>
+            <div>
+              <small>Meta total</small>
+              <strong>R$ 40.000,00</strong>
+            </div>
+            <div>
+              <small>Saldo restante</small>
+              <strong data-metric="ninjaRestante">R$ 40.000,00</strong>
+            </div>
+            <div>
+              <small>Progresso</small>
+              <strong data-metric="ninjaProgresso">0,0%</strong>
+            </div>
+          </div>
+
+          <div class="goal-progress">
+            <div class="progress-track"><span id="ninjaProgressBar"></span></div>
+            <div class="progress-labels"><span>0%</span><span>25%</span><span>50%</span><span>75%</span><span>100%</span></div>
+          </div>
+
+          <div class="goal-details">
+            <div><small>Aporte necessário</small><strong>R$ 2.857,14 / mês</strong></div>
+            <div><small>Dedicação freelance</small><strong>46,4 h / mês</strong></div>
+            <div class="risk"><small>Margem de capacidade</small><strong>-6,4 h / mês</strong></div>
+          </div>
+        </article>
+      </section>
+
+      <section class="dashboard-section" id="financeiro">
+        <div class="section-title">
+          <div><p class="eyebrow">FINANCEIRO</p><h2>Saúde financeira</h2></div>
+        </div>
+        <div class="panel-grid three">
+          <article class="panel">
+            <div class="panel-head"><h3>Receitas</h3><span class="tag">Mês atual</span></div>
+            <div class="big-number">R$ 0,00</div>
+            <p>Nenhuma receita registrada neste período.</p>
+          </article>
+          <article class="panel">
+            <div class="panel-head"><h3>Despesas</h3><span class="tag">Mês atual</span></div>
+            <div class="big-number">R$ 0,00</div>
+            <p>Nenhuma despesa registrada neste período.</p>
+          </article>
+          <article class="panel">
+            <div class="panel-head"><h3>Reserva</h3><span class="tag">Meta</span></div>
+            <div class="big-number">R$ 25.000</div>
+            <p>Meta de segurança financeira configurada.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="dashboard-section" id="freelance">
+        <div class="section-title">
+          <div><p class="eyebrow">FREELANCE</p><h2>Funil comercial</h2></div>
+          <span class="section-meta">Pipeline atual</span>
+        </div>
+
+        <div class="panel-grid two">
+          <article class="panel funnel-panel">
+            <div class="funnel-row"><span>Propostas</span><strong>0</strong></div>
+            <div class="funnel-row"><span>Entrevistas</span><strong>0</strong></div>
+            <div class="funnel-row"><span>Contratos</span><strong>0</strong></div>
+            <div class="funnel-row"><span>Connects usados</span><strong>0</strong></div>
+            <div class="panel-footer"><span>Taxa de conversão</span><strong>0,0%</strong></div>
+          </article>
+
+          <article class="panel comparison-panel">
+            <div class="panel-head"><h3>Hourly vs Fixed Price</h3></div>
+            <div class="compare-grid">
+              <div>
+                <small>Hourly</small>
+                <strong>R$ 61,63/h</strong>
+                <span>Base operacional</span>
+              </div>
+              <div class="featured">
+                <small>Fixed Price</small>
+                <strong>R$ 153,26/h</strong>
+                <span>+149% vs base</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="dashboard-section" id="produtividade">
+        <div class="section-title">
+          <div><p class="eyebrow">EXECUÇÃO</p><h2>Produtividade & estudos</h2></div>
+        </div>
+
+        <div class="panel-grid two">
+          <article class="panel">
+            <div class="panel-head"><h3>Backlog</h3><span class="tag">Tarefas</span></div>
+            <div class="stat-list">
+              <div><span>A fazer</span><strong>0</strong></div>
+              <div><span>Em andamento</span><strong>0</strong></div>
+              <div><span>Em revisão</span><strong>0</strong></div>
+              <div><span>Concluídas</span><strong>0</strong></div>
+            </div>
+          </article>
+
+          <article class="panel">
+            <div class="panel-head"><h3>Capacitação</h3><span class="tag">10h / semana</span></div>
+            <div class="study-progress">
+              <div class="study-ring"><span>0%</span></div>
+              <div>
+                <strong>0h realizadas</strong>
+                <p>Primeiro foco sugerido: Python.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="dashboard-section" id="inteligencia">
+        <div class="section-title">
+          <div><p class="eyebrow">INTELIGÊNCIA</p><h2>Central de ação</h2></div>
+          <span class="section-meta">Próximas decisões</span>
+        </div>
+
+        <div class="action-grid">
+          <article class="action-card">
+            <span class="action-number">01</span>
+            <small>PRÓXIMA TAREFA</small>
+            <h3>Nenhuma tarefa cadastrada</h3>
+            <p>Cadastre a próxima entrega na aba TAREFAS.</p>
+          </article>
+          <article class="action-card">
+            <span class="action-number">02</span>
+            <small>OPORTUNIDADE</small>
+            <h3>Pipeline vazio</h3>
+            <p>Cadastre uma oportunidade para alimentar o funil.</p>
+          </article>
+          <article class="action-card">
+            <span class="action-number">03</span>
+            <small>FOCO DE ESTUDO</small>
+            <h3>Python</h3>
+            <p>Meta semanal de 10 horas de desenvolvimento técnico.</p>
+          </article>
+          <article class="action-card">
+            <span class="action-number">04</span>
+            <small>META</small>
+            <h3>Kawasaki Ninja 500</h3>
+            <p>0,0% concluído • faltam R$ 40.000.</p>
+          </article>
+        </div>
+
+        <article class="priority-banner">
+          <div>
+            <small>PRIORIDADE AGORA</small>
+            <strong>Cadastre dados reais para ativar a inteligência do sistema.</strong>
+          </div>
+          <span class="arrow">→</span>
+        </article>
+      </section>
+
+      <footer class="footer">
+        <span>VM Intelligence • Control Center</span>
+        <span>Google Sheets + GitHub Backup</span>
+      </footer>
+    </main>
+  </div>
 
   <script src="assets/js/app.js"></script>
 </body>
