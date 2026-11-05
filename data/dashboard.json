@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-11-05T14:46:54.957102+00:00",
+  "updated_at": "2026-11-05T15:13:06.813469+00:00",
   "system_status": "operational",
   "financial": {
     "saldo_brl": 0.0,
     "receita_mes_brl": 0.0,
     "despesas_mes_brl": 0.0,
-    "cambio_usd_brl": 5.45,
+    "cambio_usd_brl": 5.47,
     "taxa_freelance_usd_h": 12.0,
     "capacidade_livre_h_mes": 40.0,
     "reserva_alvo_brl": 25000.0
@@ -16,8 +16,8 @@
     "restante_brl": 40000.0,
     "progresso_pct": 0.0,
     "aporte_mensal_brl": 2857.14,
-    "horas_mes_necessarias": 46.3,
-    "margem_horas_mes": -6.3,
+    "horas_mes_necessarias": 46.1,
+    "margem_horas_mes": -6.1,
     "prazo": "2027-12-31"
   },
   "freelance": {
@@ -28,27 +28,27 @@
     "taxa_conversao_pct": 0.0,
     "status_cambio": "Estável",
     "status_meta": "Sobrecarga de Horas",
-    "status_prospeccao": "Ação Necessária",
+    "status_prospeccao": "Funil Ativo",
     "status_rentabilidade": "Alta Margem"
   },
   "produtividade": {
     "tarefas_a_fazer": 0,
-    "tarefas_em_andamento": 0,
+    "tarefas_em_andamento": 1,
     "tarefas_em_revisao": 0,
     "tarefas_concluidas": 0,
     "estudo_meta_h_semana": 10.0,
-    "estudo_realizado_h": 0.0,
-    "estudo_progresso_pct": 0.0,
+    "estudo_realizado_h": 4.0,
+    "estudo_progresso_pct": 40.0,
     "foco_estudo": "Python"
   },
   "action_center": {
     "proxima_tarefa": {
-      "titulo": "Nenhuma tarefa cadastrada",
-      "detalhe": "Cadastre a próxima entrega na aba TAREFAS"
+      "titulo": "Finalizar validação do VM Intelligence",
+      "detalhe": "Prazo: 07/11/2026 • Prioridade: Alta"
     },
     "oportunidade": {
-      "titulo": "Pipeline vazio",
-      "detalhe": "Cadastre uma oportunidade na aba OPORTUNIDADES"
+      "titulo": "Dashboard Web — Projeto Teste",
+      "detalhe": "Status: Qualificada • USD 500,00"
     },
     "estudo": {
       "titulo": "Python",
@@ -58,6 +58,6 @@
       "titulo": "Kawasaki Ninja 500",
       "detalhe": "Progresso: 0,0% • Faltam R$ 40.000,00"
     },
-    "prioridade": "⚠ PRIMEIRO PASSO RECOMENDADO: cadastrar 1 tarefa real, 1 oportunidade e 1 bloco de estudo para ativar a inteligência do sistema."
+    "prioridade": "● Central de ação atualizada com dados reais do sistema."
   }
 }
