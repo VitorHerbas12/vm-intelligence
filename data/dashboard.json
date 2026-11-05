@@ -1,23 +1,23 @@
 {
-  "updated_at": "2026-11-05T11:10:00-03:00",
+  "updated_at": "2026-11-05T14:35:45.033237+00:00",
   "system_status": "operational",
   "financial": {
-    "saldo_brl": 0,
-    "receita_mes_brl": 0,
-    "despesas_mes_brl": 0,
+    "saldo_brl": 0.0,
+    "receita_mes_brl": 0.0,
+    "despesas_mes_brl": 0.0,
     "cambio_usd_brl": 5.44,
-    "taxa_freelance_usd_h": 12,
-    "capacidade_livre_h_mes": 40,
-    "reserva_alvo_brl": 25000
+    "taxa_freelance_usd_h": 12.0,
+    "capacidade_livre_h_mes": 0.0,
+    "reserva_alvo_brl": 0.0
   },
   "ninja": {
-    "acumulado_brl": 0,
-    "meta_total_brl": 40000,
-    "restante_brl": 40000,
-    "progresso_pct": 0,
+    "acumulado_brl": 0.0,
+    "meta_total_brl": 40000.0,
+    "restante_brl": 40000.0,
+    "progresso_pct": 0.0,
     "aporte_mensal_brl": 2857.14,
-    "horas_mes_necessarias": 46.4,
-    "margem_horas_mes": -6.4,
+    "horas_mes_necessarias": 0.0,
+    "margem_horas_mes": 0.0,
     "prazo": "2027-12-31"
   },
   "freelance": {
@@ -25,37 +25,39 @@
     "entrevistas": 0,
     "contratos": 0,
     "connects": 0,
-    "taxa_conversao_pct": 0,
-    "hourly_brl_h": 61.63,
-    "fixed_brl_h": 153.26
+    "taxa_conversao_pct": 0.0,
+    "status_cambio": "Estável",
+    "status_meta": "Sobrecarga de Horas",
+    "status_prospeccao": "Ação Necessária",
+    "status_rentabilidade": "Alta Margem"
   },
   "produtividade": {
     "tarefas_a_fazer": 0,
     "tarefas_em_andamento": 0,
     "tarefas_em_revisao": 0,
     "tarefas_concluidas": 0,
-    "estudo_meta_h_semana": 10,
-    "estudo_realizado_h": 0,
-    "estudo_progresso_pct": 0,
+    "estudo_meta_h_semana": 0.0,
+    "estudo_realizado_h": 0.0,
+    "estudo_progresso_pct": 0.0,
     "foco_estudo": "Python"
   },
   "action_center": {
     "proxima_tarefa": {
       "titulo": "Nenhuma tarefa cadastrada",
-      "detalhe": "Cadastre a próxima entrega na aba TAREFAS."
+      "detalhe": "Cadastre a próxima entrega na aba TAREFAS"
     },
     "oportunidade": {
       "titulo": "Pipeline vazio",
-      "detalhe": "Cadastre uma oportunidade para alimentar o funil."
+      "detalhe": "Cadastre uma oportunidade na aba OPORTUNIDADES"
     },
     "estudo": {
       "titulo": "Python",
-      "detalhe": "Meta semanal de 10 horas de desenvolvimento técnico."
+      "detalhe": "Meta semanal: 10h • Registre horas na aba ESTUDOS"
     },
     "meta": {
       "titulo": "Kawasaki Ninja 500",
-      "detalhe": "0,0% concluído • faltam R$ 40.000."
+      "detalhe": "Progresso: 0,0% • Faltam R$ 40.000,00"
     },
-    "prioridade": "Cadastre dados reais para ativar a inteligência do sistema."
+    "prioridade": "⚠ PRIMEIRO PASSO RECOMENDADO: cadastrar 1 tarefa real, 1 oportunidade e 1 bloco de estudo para ativar a inteligência do sistema."
   }
 }
