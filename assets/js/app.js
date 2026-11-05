@@ -66,7 +66,9 @@ function renderDashboard(data) {
   setText('[data-metric="cambio"]', `R$ ${Number(financial.cambio_usd_brl || 0).toFixed(2).replace('.', ',')}`);
   setText('[data-metric="taxa"]', `US$ ${Number(financial.taxa_freelance_usd_h || 0).toFixed(2).replace('.', ',')}`);
 
+  setText('[data-metric="ninjaTitle"]', actions.meta?.titulo || 'Kawasaki Ninja 500 SE');
   setText('[data-metric="ninjaAcumulado"]', brl(ninja.acumulado_brl));
+  setText('[data-metric="ninjaMeta"]', brl(ninja.meta_total_brl));
   setText('[data-metric="ninjaRestante"]', brl(ninja.restante_brl));
   setText('[data-metric="ninjaProgresso"]', pct(ninja.progresso_pct));
 
