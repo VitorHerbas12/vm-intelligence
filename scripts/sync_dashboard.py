@@ -6,9 +6,9 @@ from pathlib import Path
 import google.auth
 import gspread
 
-SPREADSHEET_ID = os.getenv(
-    "SPREADSHEET_ID",
-    "1fh1p5KSlPYljYypJlON9I1mrxCGdSWvPwwlwFwGUfjU",
+SPREADSHEET_ID = (
+    os.getenv("SPREADSHEET_ID")
+    or "1fh1p5KSlPYljYypJlON9I1mrxCGdSWvPwwlwFwGUfjU"
 )
 
 SCOPES = [
