@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-11-05T15:13:06.813469+00:00",
+  "updated_at": "2026-11-05T21:29:57.445732+00:00",
   "system_status": "operational",
   "financial": {
     "saldo_brl": 0.0,
     "receita_mes_brl": 0.0,
     "despesas_mes_brl": 0.0,
-    "cambio_usd_brl": 5.47,
+    "cambio_usd_brl": 5.5,
     "taxa_freelance_usd_h": 12.0,
     "capacidade_livre_h_mes": 40.0,
     "reserva_alvo_brl": 25000.0
@@ -16,8 +16,8 @@
     "restante_brl": 40000.0,
     "progresso_pct": 0.0,
     "aporte_mensal_brl": 2857.14,
-    "horas_mes_necessarias": 46.1,
-    "margem_horas_mes": -6.1,
+    "horas_mes_necessarias": 45.8,
+    "margem_horas_mes": -5.8,
     "prazo": "2027-12-31"
   },
   "freelance": {
@@ -40,6 +40,14 @@
     "estudo_realizado_h": 4.0,
     "estudo_progresso_pct": 40.0,
     "foco_estudo": "Python"
+  },
+  "dividas": {
+    "total_aberto_brl": 0.0,
+    "parcela_mensal_brl": 0.0,
+    "proximo_vencimento": "—",
+    "ativas": 0,
+    "prioridade_quitacao": "Nenhuma dívida cadastrada",
+    "recomendacao": "Cadastre suas dívidas na aba DÍVIDAS para ativar as recomendações."
   },
   "action_center": {
     "proxima_tarefa": {
