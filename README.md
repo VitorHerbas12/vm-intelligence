@@ -1,27 +1,60 @@
 # VM Intelligence
 
-Dashboard pessoal para organização financeira, freelance, acadêmica e estrutural.
+Dashboard web pessoal para finanças, freelance, estudos, metas e inteligência operacional.
 
 ## Arquitetura
 
-- Google Sheets: fonte de dados e cálculos.
-- Site: camada visual do VM Intelligence.
-- GitHub: versionamento e histórico.
-- GitHub Pages: publicação futura do site.
+```text
+Google Sheets privado
+        ↓
+GitHub Actions + Workload Identity Federation
+        ↓
+scripts/sync_dashboard.py
+        ↓
+data/dashboard.json (somente indicadores sanitizados)
+        ↓
+Site VM Intelligence
+```
 
-## Áreas principais
+A planilha permanece como fonte principal de dados e cálculos. O site público nunca lê linhas transacionais diretamente e não contém credenciais Google.
 
-- Início
+## Segurança
+
+O arquivo público `data/dashboard.json` deve conter apenas métricas agregadas e informações aprovadas para exibição.
+
+Nunca publicar:
+
+- lançamentos individuais de receitas/despesas
+- nomes privados de clientes
+- e-mails
+- tokens
+- chaves de Service Account
+- credenciais ou secrets
+- conteúdo integral do Google Sheets
+
+## Áreas do dashboard
+
+- Visão geral
 - Financeiro
 - Freelance
-- Estudos
+- Produtividade
 - Metas
-- Inteligência
+- Inteligência / Central de Ação
 
-## Direção visual
+## Sincronização
 
-Interface moderna e minimalista, com navegação em dock flutuante inspirada no comportamento do macOS, sem copiar sua identidade visual.
+O workflow está em:
 
-## Estado atual
+`.github/workflows/sync_dashboard.yml`
 
-Estrutura inicial criada para substituir a dependência do Google Sites e permitir evolução controlada do projeto.
+O script responsável por gerar a camada pública está em:
+
+`scripts/sync_dashboard.py`
+
+A autenticação usa Workload Identity Federation, sem chave JSON.
+
+## Projetos separados
+
+Este repositório é exclusivo do **VM Intelligence**.
+
+O projeto 3D ZAMP WORLD deve permanecer em repositório separado e não faz parte desta arquitetura.
