@@ -149,26 +149,26 @@ def main():
             "estudo_meta_h_semana": number(cv(1)),
             "estudo_realizado_h": number(v(23)),
             "estudo_progresso_pct": percent(v(24)),
-            "foco_estudo": text(v(25), "Python"),
+            "foco_estudo": text(v(29), "Python"),
         },
         "action_center": {
             "proxima_tarefa": {
-                "titulo": text(v(26), "Nenhuma tarefa cadastrada"),
-                "detalhe": text(v(27), "Cadastre a próxima entrega na aba TAREFAS."),
+                "titulo": text(v(25), "Nenhuma tarefa cadastrada"),
+                "detalhe": text(v(26), "Cadastre a próxima entrega na aba TAREFAS."),
             },
             "oportunidade": {
-                "titulo": text(v(28), "Pipeline vazio"),
-                "detalhe": text(v(29), "Cadastre uma oportunidade para alimentar o funil."),
+                "titulo": text(v(27), "Pipeline vazio"),
+                "detalhe": text(v(28), "Cadastre uma oportunidade para alimentar o funil."),
             },
             "estudo": {
-                "titulo": text(v(30), "Python"),
-                "detalhe": text(v(31), "Registre horas de estudo na aba ESTUDOS."),
+                "titulo": text(v(29), "Python"),
+                "detalhe": text(v(30), "Registre horas de estudo na aba ESTUDOS."),
             },
             "meta": {
-                "titulo": text(v(32), "Kawasaki Ninja 500"),
-                "detalhe": text(v(33), "Meta financeira em acompanhamento."),
+                "titulo": text(v(31), "Kawasaki Ninja 500"),
+                "detalhe": text(v(32), "Meta financeira em acompanhamento."),
             },
-            "prioridade": text(v(34), "Cadastre dados reais para ativar a inteligência do sistema."),
+            "prioridade": text(v(33), "Cadastre dados reais para ativar a inteligência do sistema."),
         },
     }
 
