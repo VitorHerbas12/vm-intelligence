@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-11-06T21:40:02.222081+00:00",
+  "updated_at": "2026-11-07T01:22:12.509328+00:00",
   "system_status": "operational",
   "financial": {
     "saldo_brl": 0.0,
     "receita_mes_brl": 0.0,
     "despesas_mes_brl": 0.0,
-    "cambio_usd_brl": 5.51,
+    "cambio_usd_brl": 5.5,
     "taxa_freelance_usd_h": 12.0,
     "capacidade_livre_h_mes": 40.0,
     "reserva_alvo_brl": 25000.0
