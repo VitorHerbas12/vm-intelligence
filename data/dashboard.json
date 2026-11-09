@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T10:29:45.802490+00:00",
+  "updated_at": "2026-11-09T20:57:06.173695+00:00",
   "system_status": "operational",
   "financial": {
     "saldo_brl": 0.0,
@@ -16,8 +16,8 @@
     "restante_brl": 47000.0,
     "progresso_pct": 0.0,
     "aporte_mensal_brl": 3357.14,
-    "horas_mes_necessarias": 53.8,
-    "margem_horas_mes": -13.8,
+    "horas_mes_necessarias": 53.7,
+    "margem_horas_mes": -13.7,
     "prazo": "2027-12-31"
   },
   "freelance": {
@@ -26,7 +26,7 @@
     "contratos": 0,
     "connects": 0,
     "taxa_conversao_pct": 0.0,
-    "status_cambio": "Estável",
+    "status_cambio": "Favorável",
     "status_meta": "Sobrecarga de Horas",
     "status_prospeccao": "Funil Ativo",
     "status_rentabilidade": "Alta Margem"
