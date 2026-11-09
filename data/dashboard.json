@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T02:48:02.825228+00:00",
+  "updated_at": "2026-11-09T10:29:45.802490+00:00",
   "system_status": "operational",
   "financial": {
     "saldo_brl": 0.0,
@@ -26,7 +26,7 @@
     "contratos": 0,
     "connects": 0,
     "taxa_conversao_pct": 0.0,
-    "status_cambio": "Favorável",
+    "status_cambio": "Estável",
     "status_meta": "Sobrecarga de Horas",
     "status_prospeccao": "Funil Ativo",
     "status_rentabilidade": "Alta Margem"
