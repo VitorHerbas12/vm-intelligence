@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-11-08T23:14:43.043634+00:00",
+  "updated_at": "2026-11-09T02:48:02.825228+00:00",
   "system_status": "operational",
   "financial": {
     "saldo_brl": 0.0,
     "receita_mes_brl": 0.0,
     "despesas_mes_brl": 0.0,
-    "cambio_usd_brl": 5.5,
+    "cambio_usd_brl": 5.51,
     "taxa_freelance_usd_h": 12.0,
     "capacidade_livre_h_mes": 40.0,
     "reserva_alvo_brl": 25000.0
@@ -26,7 +26,7 @@
     "contratos": 0,
     "connects": 0,
     "taxa_conversao_pct": 0.0,
-    "status_cambio": "Estável",
+    "status_cambio": "Favorável",
     "status_meta": "Sobrecarga de Horas",
     "status_prospeccao": "Funil Ativo",
     "status_rentabilidade": "Alta Margem"
