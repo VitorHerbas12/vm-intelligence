@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T20:57:06.173695+00:00",
+  "updated_at": "2026-11-10T03:05:57.331300+00:00",
   "system_status": "operational",
   "financial": {
     "saldo_brl": 0.0,
@@ -12,12 +12,12 @@
   },
   "ninja": {
     "acumulado_brl": 0.0,
-    "meta_total_brl": 47000.0,
-    "restante_brl": 47000.0,
+    "meta_total_brl": 28690.0,
+    "restante_brl": 28690.0,
     "progresso_pct": 0.0,
-    "aporte_mensal_brl": 3357.14,
-    "horas_mes_necessarias": 53.7,
-    "margem_horas_mes": -13.7,
+    "aporte_mensal_brl": 2049.29,
+    "horas_mes_necessarias": 32.9,
+    "margem_horas_mes": 7.1,
     "prazo": "2027-12-31"
   },
   "freelance": {
@@ -27,7 +27,7 @@
     "connects": 0,
     "taxa_conversao_pct": 0.0,
     "status_cambio": "Favorável",
-    "status_meta": "Sobrecarga de Horas",
+    "status_meta": "Meta Viável",
     "status_prospeccao": "Funil Ativo",
     "status_rentabilidade": "Alta Margem"
   },
@@ -42,10 +42,10 @@
     "foco_estudo": "Python"
   },
   "dividas": {
-    "total_aberto_brl": 0.0,
+    "total_aberto_brl": 507.28,
     "parcela_mensal_brl": 0.0,
     "proximo_vencimento": "—",
-    "ativas": 0,
+    "ativas": 6,
     "prioridade_quitacao": "Nenhuma dívida cadastrada",
     "recomendacao": "Cadastre suas dívidas na aba DÍVIDAS para ativar as recomendações."
   },
@@ -63,8 +63,8 @@
       "detalhe": "Meta semanal: 10h • Registre horas na aba ESTUDOS"
     },
     "meta": {
-      "titulo": "Kawasaki Ninja 500 SE",
-      "detalhe": "Progresso: 0,0% • Faltam R$ 47.000,00"
+      "titulo": "Yamaha R15 ABS + upgrades",
+      "detalhe": "Progresso: 0,0% • Faltam R$ 28.690,00"
     },
     "prioridade": "● Central de ação atualizada com dados reais do sistema."
   }
