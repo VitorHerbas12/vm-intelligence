@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-11-25T09:57:54.403478+00:00",
+  "updated_at": "2026-11-25T19:42:36.968370+00:00",
   "system_status": "operational",
   "financial": {
     "saldo_brl": 0.0,
     "receita_mes_brl": 0.0,
     "despesas_mes_brl": 0.0,
-    "cambio_usd_brl": 5.91,
+    "cambio_usd_brl": 5.81,
     "taxa_freelance_usd_h": 12.0,
     "capacidade_livre_h_mes": 40.0,
     "reserva_alvo_brl": 25000.0
@@ -16,8 +16,8 @@
     "restante_brl": 28690.0,
     "progresso_pct": 0.0,
     "aporte_mensal_brl": 2049.29,
-    "horas_mes_necessarias": 30.6,
-    "margem_horas_mes": 9.4,
+    "horas_mes_necessarias": 31.2,
+    "margem_horas_mes": 8.8,
     "prazo": "2027-12-31"
   },
   "freelance": {
