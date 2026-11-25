@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-25T01:09:53.478845+00:00",
+  "updated_at": "2026-11-25T09:57:54.403478+00:00",
   "system_status": "operational",
   "financial": {
     "saldo_brl": 0.0,
@@ -16,8 +16,8 @@
     "restante_brl": 28690.0,
     "progresso_pct": 0.0,
     "aporte_mensal_brl": 2049.29,
-    "horas_mes_necessarias": 30.7,
-    "margem_horas_mes": 9.3,
+    "horas_mes_necessarias": 30.6,
+    "margem_horas_mes": 9.4,
     "prazo": "2027-12-31"
   },
   "freelance": {
